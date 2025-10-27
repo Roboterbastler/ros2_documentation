@@ -33,8 +33,6 @@ public:
 
   void send_goal()
   {
-    using namespace std::placeholders;
-
     this->timer_->cancel();
 
     if (!this->client_ptr_->wait_for_action_server()) {
