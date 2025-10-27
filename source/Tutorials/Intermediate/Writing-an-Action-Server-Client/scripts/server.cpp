@@ -21,8 +21,6 @@ public:
   explicit FibonacciActionServer(const rclcpp::NodeOptions & options = rclcpp::NodeOptions())
   : Node("fibonacci_action_server", options)
   {
-    using namespace std::placeholders;
-
     auto handle_goal = [this](
       const rclcpp_action::GoalUUID & uuid,
       std::shared_ptr<const Fibonacci::Goal> goal)
