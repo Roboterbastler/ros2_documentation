@@ -329,8 +329,6 @@ Since you'll be changing the standard string msg to a numerical one, the output 
       #include "rclcpp/rclcpp.hpp"
       #include "tutorial_interfaces/msg/num.hpp"                                       // CHANGE
 
-      using std::placeholders::_1;
-
       class MinimalSubscriber : public rclcpp::Node
       {
       public:
