@@ -203,8 +203,6 @@ We have two nodes - one providing a simple service:
         #include "rclcpp/rclcpp.hpp"
         #include "std_srvs/srv/empty.hpp"
 
-        using namespace std::placeholders;
-
         namespace cb_group_demo
         {
         class ServiceNode : public rclcpp::Node
